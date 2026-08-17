@@ -1,0 +1,8 @@
+path: images/test7
+train: train
+val: val
+test: test
+names:
+- green
+- red
+nc: 2

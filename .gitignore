@@ -1,0 +1,63 @@
+# ==================================================
+# Python virtual environments
+# ==================================================
+.venv/
+venv/
+myenv/
+myenv2/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Secrets
+.env
+*.env
+
+# Windows / macOS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+
+# ==================================================
+# YOLO generated training / inference results
+# ==================================================
+**/runs/
+**/outputs/
+
+
+# ==================================================
+# Downloaded / trained model binaries
+# ==================================================
+*.pt
+*.onnx
+*.torchscript
+*.engine
+
+
+# ==================================================
+# Original dataset archives
+# ==================================================
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+
+# ==================================================
+# Large video files
+# ==================================================
+*.mp4
+*.avi
+*.mov
+*.mkv

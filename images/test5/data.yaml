@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['cup']
+
+roboflow:
+  workspace: hawx1-ysfoy
+  project: seg_cup1-rr9fv
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/hawx1-ysfoy/seg_cup1-rr9fv/dataset/1

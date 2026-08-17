@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['esp32', 'wheel']
+
+roboflow:
+  workspace: hawx1-ysfoy
+  project: test1-jnmbv
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/hawx1-ysfoy/test1-jnmbv/dataset/3
