@@ -47,5 +47,5 @@ model.val()
 """
 
 # 4. 예측 (선택)
-results = model.predict(source='./images/test2', save=True, save_txt=True)
+results = model.predict(source='images/test2', save=True, save_txt=True)
 

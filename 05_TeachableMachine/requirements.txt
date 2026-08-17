@@ -1,0 +1,23 @@
+# AI_Vision_Lab - 05_TeachableMachine
+# Recommended Python: 3.10
+# Baseline for classic Teachable Machine Keras .h5 exports.
+# Adjust later if the exported model format differs.
+
+#1. 가상 환경
+# cd D:\Dropbox\4_Tutorials\AI_Vision_Lab\05_TeachableMachine
+# py -3.10 -m venv myenv
+# .\myenv\Scripts\Activate.ps1
+
+#2. 패키지 설치
+# python -m pip install --upgrade pip
+# python -m pip install -r requirements.txt
+
+tensorflow==2.15.1
+keras==2.15.0
+numpy==1.26.4
+opencv-python==4.11.0.86
+pillow==11.0.0
+
+#3. 확인
+# python -m pip check
+# deactivate

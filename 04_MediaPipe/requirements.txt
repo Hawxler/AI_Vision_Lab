@@ -1,0 +1,20 @@
+# AI_Vision_Lab - 04_MediaPipe
+# Recommended Python: 3.11
+# This environment preserves the legacy mp.solutions-based examples.
+# Do NOT additionally install opencv-python in this environment.
+
+#1. 가상 환경 설정
+# cd D:\Dropbox\4_Tutorials\AI_Vision_Lab\04_MediaPipe
+# py -3.11 -m venv .venv
+# .\.venv\Scripts\Activate.ps1
+
+#2. 
+# python -m pip install --upgrade pip
+# python -m pip install -r requirements.txt
+
+# python -m pip check
+# deactivate
+
+numpy==1.26.4
+opencv-contrib-python==4.11.0.86
+mediapipe==0.10.21
