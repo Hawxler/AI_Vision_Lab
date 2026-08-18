@@ -1,0 +1,28 @@
+# AI_Vision_Lab - 02_YOLO_Tracking
+# Recommended Python: 3.10
+
+# cd D:\Dropbox\4_Tutorials\AI_Vision_Lab\02_YOLO_Tracking
+
+# 가상 환경 준비
+# py -3.10 -m venv myenv
+# .\myenv\Scripts\Activate.ps1
+# python --version
+# python -m pip install --upgrade pip
+
+# 파이토치 별도 설치 필요
+# Install CUDA-enabled PyTorch FIRST:
+# python -m pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+
+# 아래 패키지 설치
+# python -m pip install -r requirements.txt
+# python -m pip check  # 확인
+
+numpy==1.26.4
+opencv-python==4.11.0.86
+ultralytics==8.3.183
+supervision==0.26.1
+lap==0.5.12
+Cython==3.1.3
+cython_bbox==0.1.5
+deep-sort-realtime==1.3.2
+keyboard==0.13.5

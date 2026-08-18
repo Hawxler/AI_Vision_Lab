@@ -5,6 +5,11 @@
 venv/
 myenv/
 myenv2/
+env1/
+env2/
+env3/
+env4/
+env5/
 
 # Python cache
 __pycache__/
@@ -61,3 +66,12 @@ Desktop.ini
 *.avi
 *.mov
 *.mkv
+
+# ==================================================
+# 데이터셋 폴더
+# ==================================================
+**/datasets/
+**/data/
+*.jpg
+*.jpeg
+*.png

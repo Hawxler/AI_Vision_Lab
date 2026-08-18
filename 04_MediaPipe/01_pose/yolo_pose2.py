@@ -16,7 +16,7 @@ with mp_pose.Pose(static_image_mode=False, model_complexity=1) as pose:
     while True:
         ok, frame = cap.read()
         if not ok: break
-        rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) # MediaPipe는 RGB 사용함.
         res = pose.process(rgb)
         if res.pose_landmarks:
             lm = res.pose_landmarks.landmark
