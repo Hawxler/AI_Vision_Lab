@@ -41,8 +41,13 @@ while True:
     image = (image / 127.5) - 1
 
     # Predicts the model
-    prediction = model.predict(image) #[[[Filers 확률], [Screwdriver확률]], [[Filers확률],[Screwdriver확률]]...]
+    prediction = model.predict(image)
+    # [[이미지1의 클라1 확률 0.27, 이미지1의 클라2 확률 0.95],
+    #  [이미지2의 클라1 확률 0.83, 이미지2의 클라2 확률 0.12],
+    #  [이미지2의 클라1 확률 0.21, 이미지2의 클라2 확률 0.00],  ...]
     index = np.argmax(prediction) # 예측값 중 가장 확률 높은 놈
+    # 여러 이미지면 열 비교: np.argmax(prediction, axis=1) 
+    # 0.27 < 0.95이므로 1번 이미지는 클라1 = 0, 클라2 = 1
     class_name = class_names[index] # [[Filers Screwdriver]] -> "0 Filers\n"
     confidence_score = prediction[0][index]
 

@@ -2,7 +2,7 @@
 from ultralytics import YOLO
 import pandas as pd
 
-DATA_YAML = r"images\test5\data.yaml"
+DATA_YAML = r"01_YOLO_Core\04_segmentation_cup\dataset\data.yaml"
 PRETRAIN = "yolo11n-seg.pt"  # 또는 yolo11s/m/L/x-seg.pt
 
 # GPU: device=0 / 여러 GPU: device=[0,1] / CPU: device='cpu'
@@ -21,18 +21,18 @@ def main():
         lr0=1e-3,       # 초기 학습률
         patience=20,    # 초기 종료(개선 없으면)
         project="test5_1",  # 결과 저장 폴더
-        name="yolo_test5_seg"
+        name="yolo_test5_seg3"
     )
     
     # 3. 검증
-    metrics = model.val(data="data.yaml") # YOLOv8 이하는 (split='val')로 폴더를 정해줌. mAP50-95, mIoU 등
+    metrics = model.val(data=DATA_YAML, split='val') # split='val'은 없어도 되지만 validation을 명확히 하는 것도 좋음.
     print(f"검증 결과: {metrics}")
-    df = pd.read_csv('test5_1/yolo_test5_model/results.csv')
+    df = pd.read_csv(r'test5_1\yolo_test5_seg3\results.csv')
     print(df)
 
     # 4. 테스트 (선택 - 모델 성능 확인)
     results = model.predict(
-        source="./images/test5/test/images",
+        source=r"images\test5\test\images",
         save=True
     )
     

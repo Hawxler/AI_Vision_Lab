@@ -2,7 +2,7 @@
 # 초간단 한 줄 테스트
 from ultralytics import YOLO
 
-YOLO(r"test5_1\yolo_test5_seg\weights\best.pt").predict(
+YOLO(r"test5_1\yolo_test5_seg3\weights\best.pt").predict(
     source=0, 
     show=True, 
     conf=0.5, 
